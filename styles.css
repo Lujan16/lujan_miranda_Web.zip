@@ -1,0 +1,191 @@
+/** basics **/
+body {
+    
+    background-image: url(https://www.todofondos.net/wp-content/uploads/1920x1080-Pastel-Blue-Fondo-1080p-Fondo-de-movimiento-768x432.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-size: 12px;
+    font-family: pt mono;
+   padding: 1%;
+
+  }
+
+
+* {
+    margin:0;
+    padding:0;
+     box-sizing: border-box;
+}
+
+
+
+/*  encabezado */
+.header {
+  background: radial-gradient(rgb(73, 202, 241), rgb(69, 173, 241));
+  padding: 3px;
+  padding-bottom: 1%;
+
+  text-align: center;
+  font-size: 20x;
+}
+
+/* columnas*/
+
+.column1  {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 300px; 
+  background-color:rgba(67, 162, 179, 0.493)
+}
+
+
+
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px; 
+  background-color: #6bb7bd;
+}
+
+.column3 {
+  float: right;
+  width: 80%;
+  padding: 10px; 
+  background-color: #6bb7bd;
+}
+
+#row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  footer */
+.footer {
+  background-color: #6ccadb8c;
+  padding: 1px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+  .column {
+    width: 10%;
+  }
+
+}
+/*texto*/
+u {
+    text-decoration:wavy
+}
+
+    .firstletter, u {
+        display:block;
+        float:left;
+        padding:12px 14px;
+        font-weight:1000;
+        text-transform:uppercase;
+        font: size 20px;
+        margin:0px 10px 0px 0px;
+        border-radius:5px;
+    }
+    blockquote {
+        padding:0px 5px 0px 15px;
+        border-left:1px ;
+        margin-left:5px;
+        margin-right:0px;
+    }
+        
+        blockquote blockquote {
+            margin-right:0px;
+        }
+        
+      /* colum3 */
+        .read-more-state {
+          display: none;
+        }
+        
+        .read-more-target {
+          opacity: 0;
+          max-height: 0;
+          font-size: 0;
+          transition: .25s ease; 
+        }
+        
+        .read-more-state:checked~.read-more-wrap .read-more-target {
+          opacity: 1;
+          font-size: inherit;
+          max-height: 999em;
+          
+        }
+        
+        .read-more-state~.read-more-trigger:before {
+          content: 'Ver más';
+        }
+        
+        .read-more-state:checked~.read-more-trigger:before {
+          content: 'Ver menos';
+        }
+        
+        .read-more-trigger {
+          cursor: pointer;
+          display: inline-block;
+          padding: 0 .5em;
+          color: #666;
+          font-size: .9em;
+          line-height: 2;
+          border: 1px solid #ddd;
+          border-radius: .25em;
+           
+          
+        }
+        
+        /* fonts*/
+        
+        p {
+          padding: 2%;
+          background: #c6fbff;
+          color: #7ec2c7;
+          border: 1px solid #9ff6fc;
+          border-radius: .25em;
+          
+        }
+  
+b, span{
+  font-size: 13px;
+
+}
+h2{
+  font-family: sofia ;
+  font-size: 22px;
+}
+h1{
+  font-family: 'Playfair Display SC', serif;
+}
+
+#boton{
+  background-color: aqua;
+
+}
+
+/*scrollbar*/ 
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 183, 255, 0.219);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(43, 153, 216, 0.925);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  
+}
